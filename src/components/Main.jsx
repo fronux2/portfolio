@@ -23,18 +23,15 @@ export default function Main () {
                 <img src={marcos} className="w-auto h-full" alt="Marcos Munoz"/>      
                 <section className="flex flex-col">
                 <p className="pb-1 text-xs text-center">
-                        Desarrollador con enfoque en JavaScript para crear aplicaciones web completas."
-                    </p>  
-                    <p className="pb-1 text-xs text-center">
-                        Soy de Santiago de Chile Comuna de Sab Bernardo.
-                    </p>  
-                    <p className="pb-1 text-xs text-center">
-                        Soy Egresado del Instituto Duoc UC como Técnico Analista Programador.
-                    </p>   
-                    
-                    
-                </section>
-                 
+                    Desarrollador con enfoque en JavaScript para la creación de aplicaciones web completas.
+                </p>  
+                <p className="pb-1 text-xs text-center">
+                    Resido en Santiago de Chile, en la Comuna de San Bernardo.
+                </p>  
+                <p className="pb-1 text-xs text-center">
+                    Soy egresado del Instituto Duoc UC como Técnico Analista Programador Computacional.
+                </p>                     
+            </section>                 
             </section>
             <h2 className="font-extrabold text-2xl mt-20">Proyectos</h2>
             <section className="flex gap-4 mt-10">                
