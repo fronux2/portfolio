@@ -1,76 +1,77 @@
-import { CssIcon, GitHubIcon, HtmlIcon, JsIcon, LinkedinIcon, ReactIcon} from "./icons"
+import { ContacGoogle, ContacIcon, CssIcon, DiscordIcon, GitHubIcon, HtmlIcon, JsIcon, LinkedinIcon, NextIcon, ReactIcon, TailwindIcon, WhatsappIcon} from "./icons"
 import pdf from '../pdf/Marcos-Muñoz-CV2023.pdf'
 import marcos from '../img/anonimo.webp'
 import calculadora from '../img/calculadora.png'
+import Card from "./Card"
 
 export default function Main () {
     return(
-        <main className="mr-10 ml-10">
+        <main id='home' className="mr-10 ml-10">            
             <section className="mt-10">
-                <h2 className="font-extrabold text-3xl">Marcos Muñoz</h2>
+                <h2  className="font-extrabold text-3xl">Marcos Muñoz</h2>
                 <h3 className="font-bold text-xl">web developer</h3>
                 <br/>
                 <section className="flex items-center gap-2">
                     <button href='../pdf/Marcos-Muñoz-CV2023.pdf' className="border rounded hover:bg-sky-700 bg-sky-500 pr-2 pl-2 pt-1 pb-1" > <a href={pdf}>Descargar CV</a> </button>
                     <a href="https://github.com/fronux2"><GitHubIcon/></a> 
-                    <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/"><LinkedinIcon/></a>
-                    
+                    <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/"><LinkedinIcon/></a>                    
                 </section>
             </section>
-
-            <h2 className="font-extrabold text-2xl mt-10">Acerca de mi</h2>
-
+            <h2 className="font-extrabold text-2xl mt-20" id='about'>Sobre mí</h2>
             <section className="flex items-center mt-6 gap-6">                
                 <img src={marcos} className="w-52 h-20" alt="Marcos Munoz"/>      
-                <p className="text-xs max-w-xl">Egresado del Instituto Duoc UC como Técnico Analista Programador.<br/>
-                    Mi perfil profesional se centra en el desarrollo tanto front-end como back-end, y mi lenguaje principal es JavaScript.<br/>
-                    Esta combinación de habilidades me permite abordar una amplia gama de aspectos en el desarrollo web.</p>          
+                <section className="flex flex-col">
+                    <p className="pb-1 text-xs text-center">
+                        Egresado del Instituto Duoc UC como Técnico Analista Programador.
+                    </p>   
+                    <p className="pb-1 text-xs text-center">
+                        Soy de Santiago de Chile Comuna de Sab Bernardo.
+                    </p>  
+                    <p className="pb-1 text-xs text-center">
+                        Mi perfil profesional se centra en el desarrollo tanto front-end como back-end, y mi lenguaje principal es JavaScript.
+                    </p>  
+                </section>
+                 
             </section>
-
-            <h2 className="font-extrabold text-2xl mt-10">Proyectos</h2>
+            <h2 className="font-extrabold text-2xl mt-20">Proyectos</h2>
             <section className="flex gap-4 mt-10">                
-                <section className="flex flex-row  border-4 w-36 h-52 overflow-hidden">
-                    <article className="divide-y">
-                        <section className="flex h-16 w-full justify-center items-center">
-                            <img src={calculadora} className="w-full h-full object-cover object-center" alt="calculadora"/>
-                        </section>
-                        
-                        <h3 className="mt-1 font-bold">Calculadora</h3>
-                        <p className="text-xs max-w-xl mt-1">Calculadora basica con un estilo minimalista.</p>
-                        <section className="flex mt-1">
+                <Card calculadora={calculadora} titulo={'Calculadora'} detalle={'Calculadora básica con un estilo minimalista.'}>
                             <JsIcon/>
                             <HtmlIcon/>
                             <CssIcon/>
-                            <ReactIcon/>                            
-                        </section>
-                        <section className="flex justify-center items-center gap-2 pt-1 pb-1 text-xs">
-                            <button className="border-2 p-0 border-fuchsia-600"><a href="http://fronux2.github.io/calculadora-react/">DEMO</a></button>
-                            <button className="border-2 p-0 border-fuchsia-600"><a href="https://github.com/fronux2/calculadora-react">GITHUB</a></button>
-                        </section>
-                    </article>
-                </section>
-                <section className="flex flex-row  border-4 w-36 h-52 overflow-hidden">
-                    <article className="divide-y">
-                        <section className="flex h-16 w-full justify-center items-center">
-                            <img src={calculadora} className="w-full h-full object-cover object-center" alt="calculadora"/>
-                        </section>
-                        
-                        <h3 className="mt-1 font-bold">Calculadora</h3>
-                        <p className="text-xs max-w-xl mt-1">Calculadora basica con un estilo minimalista.</p>
-                        <section className="flex mt-1">
+                            <ReactIcon/> 
+                </Card>
+                <Card calculadora={calculadora} titulo={'Calculadora'} detalle={'Calculadora básica con un estilo minimalista.'}>
                             <JsIcon/>
                             <HtmlIcon/>
                             <CssIcon/>
-                            <ReactIcon/>                            
-                        </section>
-                        <section className="flex justify-center items-center gap-2 pt-1 pb-1 text-xs">
-                            <button className="border-2 p-0 border-fuchsia-600"><a href="http://fronux2.github.io/calculadora-react/">DEMO</a></button>
-                            <button className="border-2 p-0 border-fuchsia-600"><a href="https://github.com/fronux2/calculadora-react">GITHUB</a></button>
-                        </section>
-                    </article>
-                </section>
+                            <ReactIcon/> 
+                </Card>
             </section>   
-            <h2 className="font-extrabold text-2xl mt-10">Tecnologias</h2>  
+            <h2 className="font-extrabold text-2xl mt-24">Tecnologías</h2>  
+            <sectiont className="grid grid-cols-3 mt-10">
+                <CssIcon className="w-16 h-16 mb-7" />
+                <GitHubIcon className="w-16 h-16 mb-7"/>
+                <HtmlIcon className="w-16 h-16 mb-7"/>
+                <JsIcon className="w-16 h-16 mb-7"/>      
+                <NextIcon className="w-16 h-16 mb-7 border"/>     
+                <ReactIcon className="w-16 h-16 mb-7 text-sky-500"/>                  
+            </sectiont>
+            <h2 className="font-extrabold text-2xl mt-24" id='contacto'>Contactos</h2>
+            <section className="flex flex-col mt-10 mb-32">
+                <a href="mailto:marcosantonio.munozg@gmail.com">
+                    <button type="button" className="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+                        <ContacIcon/>Contáctame vía correo
+                    </button>
+                </a> 
+                <a href="mailto:marcosantonio.munozg@gmail.com">
+                    <button type="button" className="text-white bg-[#25D366] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+                        <WhatsappIcon/> Contáctame vía Whatsapp
+                    </button>
+                </a>         
+                
+            </section>
+            
         </main>
     )
 }
