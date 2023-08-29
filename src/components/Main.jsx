@@ -12,24 +12,27 @@ export default function Main () {
                 <h3 className="font-bold text-xl">web developer</h3>
                 <br/>
                 <section className="flex items-center gap-2">
-                    <button href='../pdf/Marcos-Muñoz-CV2023.pdf' className="border rounded hover:bg-sky-700 bg-sky-500 pr-2 pl-2 pt-1 pb-1" > <a href={pdf}>Descargar CV</a> </button>
+                <a href={pdf}><button href='../pdf/Marcos-Muñoz-CV2023.pdf' className="border rounded hover:bg-sky-700 bg-sky-500 pr-2 pl-2 pt-1 pb-1" >Descargar CV</button></a>
+                    
                     <a href="https://github.com/fronux2"><GitHubIcon/></a> 
                     <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/"><LinkedinIcon/></a>                    
                 </section>
             </section>
             <h2 className="font-extrabold text-2xl mt-20" id='about'>Sobre mí</h2>
-            <section className="flex items-center mt-6 gap-6">                
-                <img src={marcos} className="w-52 h-20" alt="Marcos Munoz"/>      
+            <section className="flex items-center mt-6 gap-12 w-full h-60">                
+                <img src={marcos} className="w-auto h-full" alt="Marcos Munoz"/>      
                 <section className="flex flex-col">
-                    <p className="pb-1 text-xs text-center">
-                        Egresado del Instituto Duoc UC como Técnico Analista Programador.
-                    </p>   
+                <p className="pb-1 text-xs text-center">
+                        Desarrollador con enfoque en JavaScript para crear aplicaciones web completas."
+                    </p>  
                     <p className="pb-1 text-xs text-center">
                         Soy de Santiago de Chile Comuna de Sab Bernardo.
                     </p>  
                     <p className="pb-1 text-xs text-center">
-                        Mi perfil profesional se centra en el desarrollo tanto front-end como back-end, y mi lenguaje principal es JavaScript.
-                    </p>  
+                        Soy Egresado del Instituto Duoc UC como Técnico Analista Programador.
+                    </p>   
+                    
+                    
                 </section>
                  
             </section>
