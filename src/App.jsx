@@ -17,15 +17,12 @@ function App() {
     }
   }
  
-  return (
-        
+  return (        
       <div className={`${bgWeb} ${darkMode}`}>
         <Header darkMode={buttonDarkMode}/>
         <Main/>
         <Footer/>
       </div>
-      
-
   )
 }
 export default App
