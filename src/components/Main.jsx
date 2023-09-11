@@ -1,6 +1,9 @@
 import { ContacGoogle, ContacIcon, CssIcon, DiscordIcon, GitHubIcon, HtmlIcon, JsIcon, LinkedinIcon, NextIcon, ReactIcon, TailwindIcon, WhatsappIcon} from "./icons"
 import pdf from '../pdf/Marcos-Muñoz-CV2023.pdf'
-import marcos from '../img/Marcos-Munoz.jpg'
+import marcos from '../img/marcos.jpg'
+import marcosAvif from '../img/marcos.avif'
+import marcosWebp from '../img/marcos.webp'
+import marcosWebp2 from '../img/marcos2.webp'
 import calculadora from '../img/calculadora.png'
 import Card from "./Card"
 
@@ -9,27 +12,31 @@ export default function Main () {
         <main id='home' className="mr-10 ml-10  lg:ml-40 lg:mr-40">            
             <section className="pt-20">
                 <h2  className="font-extrabold text-4xl  md:text-6xl lg:text-7xl dark:text-teal-100 sm:text-fuchsia-700">Marcos Muñoz</h2>
-                <h3 className="font-bold text-2xl sm:text-3xl dark:text-teal-600">Desarrollador web</h3>
+                <h1 className="font-bold text-2xl sm:text-3xl dark:text-teal-600">Desarrollador web</h1>
                 
                 <section className="flex items-center gap-2 sm:mt-12 mt-10">
                     <a href={pdf}>                    
-                        <button href='../pdf/Marcos-Muñoz-CV2023.pdf' className="border rounded transform hover:scale-110 hover:bg-teal-700 bg-teal-500 pr-2 pl-2 pt-1 pb-1 transition-colors">Descargar CV</button>
+                        <button href='../pdf/Marcos-Muñoz-CV2023.pdf' className="border rounded lg:text-2xl text-lg transform hover:scale-110 hover:bg-teal-700 bg-teal-500 pr-2 pl-2 pt-1 pb-1 transition-colors">Descargar CV</button>
                     </a>                    
-                    <a href="https://github.com/fronux2"><GitHubIcon className={'w-8 h-8 mr-2 hover:text-lime-500 transform hover:scale-125 transition-colors'}/></a> 
-                    <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/"><LinkedinIcon className='w-8 h-8 mr-2 hover:text-violet-500 transform hover:scale-125 transition-colors'/></a>                    
+                    <a href="https://github.com/fronux2"><GitHubIcon className={'w-10 h-10 lg:w-12 lg:h-12 mr-2 hover:text-lime-500 transform hover:scale-125 transition-colors'}/></a> 
+                    <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/"><LinkedinIcon className='w-10 h-10 lg:w-12 lg:h-12 mr-2 hover:text-violet-500 transform hover:scale-125 transition-colors'/></a>                    
                 </section>
             </section>
             <h2 className="font-extrabold text-4xl sm:text-5xl lg:text-7xl mt-20 dark:text-teal-100" id='about'>Sobre mí</h2>
-            <section className="flex items-center mt-6 gap-4 lg:gap-20 w-full sm:h-96 justify-between">                
-                <img src={marcos} className="w-1/3 sm:w-56 h-auto" alt="Imagen Perfil Marcos Munoz"/>      
-                <section className="flex flex-col font-bold justify-center h-full sm:w-3/4">
-                    <p className="pb-1 text-xs sm:text-sm md:text-base text-center dark:text-teal-100  lg:text-lg sm:pb-5 lg:max-w-lg">
+            <section className="flex mt-6 h-72 sm:gap-8 sm:h-96 lg:w-max lg:gap-16 lg:h-96 items-center gap-2">
+                <picture className="w-52 h-56 lg:h-80 lg:w-64 flex justify-center items-center">
+                    <source srcSet={marcosAvif}  type="image/avif" alt="imagen perfil"></source> 
+                    <img src={marcosWebp2} alt="imagen perfil"/>
+                </picture>                
+                
+                <section className="flex flex-col gap-1 sm:gap-2 lg:gap-4 w-96 justify-center">
+                    <p className="text-xs dark:text-slate-300 font-medium sm:text-sm lg:text-lg">
                         Desarrollador con enfoque en JavaScript para la creación de aplicaciones web completas.
                     </p>
-                    <p className="pb-1 text-xs sm:text-sm md:text-base text-center dark:text-teal-100 lg:text-lg sm:pb-5 lg:max-w-lg">
+                    <p className="text-xs dark:text-slate-300 font-medium sm:text-sm lg:text-lg">
                         Resido en Santiago de Chile, en la Comuna de San Bernardo.
                     </p>
-                    <p className="pb-1 text-xs sm:text-sm md:text-base text-center dark:text-teal-100 lg:text-lg sm:pb-5 lg:max-w-lg">
+                    <p className="text-xs dark:text-slate-300 font-medium sm:text-sm lg:text-lg">
                         Soy egresado del Instituto Duoc UC como Técnico Analista Programador Computacional.
                     </p>                     
                 </section>                 

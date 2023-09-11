@@ -1,6 +1,6 @@
 export default function Card ({calculadora, children, titulo, detalle}){
     return(
-            <section className="flex flex-row w-56 h-64 transform hover:scale-105 sm:h-96 sm:w-56 ease-in-out overflow-hidden border-teal-900 border-2 bg-indigo-600 dark:bg-slate-500 opacity-80 hover:opacity-100 dark:hover:bg-teal-950 shadow-2xl rounded">
+            <section className="flex w-56 h-64 sm:h-96 sm:w-56 border-teal-900 border-2 bg-indigo-600 dark:bg-teal-800 shadow-2xl rounded">
                 <article className="max-w-xs flex flex-col">
                     <section className="flex h-16 w-full justify-center items-center sm:h-32 ">
                         <img src={calculadora} className="w-full h-full object-cover object-center" alt="calculadora"/>
@@ -11,9 +11,9 @@ export default function Card ({calculadora, children, titulo, detalle}){
                     <section className="flex mt-3 m-1 sm:gap-5">
                         {children}                           
                     </section>
-                    <section className="flex justify-center m-1 flex-grow items-center gap-2 w-full text-xs md:text-lg sm:text-sm">
-                        <button className="border-2 p-1  transform hover:scale-125 ease-in-out border-teal-900 bg-teal-500 hover:bg-teal-700"><a href="http://fronux2.github.io/calculadora-react/">DEMO</a></button>
-                        <button className="border-2 p-1 transform hover:scale-125 border-teal-900 bg-teal-500 hover:bg-teal-700"><a href="https://github.com/fronux2/calculadora-react">GITHUB</a></button>
+                    <section className="flex justify-center m-1 flex-grow items-center gap-4 w-full text-xs md:text-lg sm:text-sm">
+                        <button className="border-2 p-1  text-lg lg:text-2xl transform hover:scale-125 ease-in-out border-teal-900 bg-teal-500 hover:bg-teal-400"><a href="http://fronux2.github.io/calculadora-react/">DEMO</a></button>
+                        <button className="border-2 p-1 text-lg lg:text-2xl transform hover:scale-125 border-teal-900 bg-teal-500 hover:bg-teal-400"><a href="https://github.com/fronux2/calculadora-react">GITHUB</a></button>
                     </section>
                 </article>
             </section>
