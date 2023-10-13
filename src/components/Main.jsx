@@ -5,6 +5,7 @@ import marcosAvif from '../img/marcos.avif'
 import marcosWebp from '../img/marcos.webp'
 import marcosWebp2 from '../img/marcos2.webp'
 import calculadora from '../img/calculadora.png'
+import sallubos from '../img/sallubos.png'
 import Card from "./Card"
 
 export default function Main () {
@@ -17,9 +18,9 @@ export default function Main () {
                 <section className="flex items-center gap-2 sm:mt-12 mt-10">
                     <a href={pdf}>                    
                         <button href='../pdf/Marcos-Muñoz-CV2023.pdf' className="border rounded lg:text-2xl text-lg transform hover:scale-110 hover:bg-teal-700 bg-teal-500 pr-2 pl-2 pt-1 pb-1 transition-colors">Descargar CV</button>
-                    </a>                    
-                    <a href="https://github.com/fronux2"><GitHubIcon className={'w-10 h-10 lg:w-12 lg:h-12 mr-2 hover:text-lime-500 transform hover:scale-125 transition-colors'}/></a> 
-                    <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/"><LinkedinIcon className='w-10 h-10 lg:w-12 lg:h-12 mr-2 hover:text-violet-500 transform hover:scale-125 transition-colors'/></a>                    
+                    </a>        
+                    <a href="https://github.com/fronux2" alt="Link Perfil GitHub"><GitHubIcon className={'w-10 h-10 lg:w-12 lg:h-12 mr-2 text-slate-300 hover:text-lime-500 transform hover:scale-125 transition-colors'}/></a> 
+                    <a href="https://www.linkedin.com/in/marcos-mu%C3%B1oz-gonzalez-a32888270/" alt="Link Perfil Linkedin"><LinkedinIcon className='w-10 h-10 lg:w-12 lg:h-12 text-slate-300 mr-2 hover:text-violet-500 transform hover:scale-125 transition-colors'/></a>                    
                 </section>
             </section>
             <h2 className="font-extrabold text-4xl sm:text-5xl lg:text-7xl mt-20 dark:text-teal-100" id='about'>Sobre mí</h2>
@@ -43,15 +44,15 @@ export default function Main () {
             </section>
             <h2 className="font-extrabold text-4xl mt-20 dark:text-teal-100 sm:text-5xl lg:text-7xl">Proyectos</h2>
             <section className="flex gap-4 mt-10 sm:mt-20">                
-                <Card calculadora={calculadora} titulo={'Calculadora'} detalle={'Calculadora básica con un estilo minimalista.'}>
+                <Card calculadora={calculadora} titulo={'Calculadora'} detalle={'Calculadora básica con un estilo minimalista.'} hrefGitHub={'https://github.com/fronux2/calculadora-react'} hrefDemo={'http://fronux2.github.io/calculadora-react/'}>
                     <ReactIcon className="max-h-8 w-12 mt-1 mb-1 sm:mt-2"/>                             
                     <HtmlIcon className="max-h-12"/>
                     <CssIcon className="max-h-12"/>
                     <JsIcon className="max-h-12"/>
                             
                 </Card>
-                <Card calculadora={calculadora} titulo={'Calculadora'} detalle={'Calculadora básica con un estilo minimalista.'}>
-                    <ReactIcon className="max-h-8 w-12 mt-1 mb-1 sm:mt-2"/>                             
+                <Card calculadora={sallubos} titulo={'Sal Lubos'} detalle={'Copia de la web sallobos.'} hrefDemo={'https://rumi-store.vercel.app/inicio'} hrefGitHub={'https://github.com/fronux2/rumi-store'}>
+                    <NextIcon className="w-12 h-12"/>                            
                     <HtmlIcon className="max-h-12"/>
                     <CssIcon className="max-h-12"/>
                     <JsIcon className="max-h-12"/> 
@@ -64,7 +65,7 @@ export default function Main () {
                 <HtmlIcon className="w-16 h-16 sm:m-16 m-5 sm:h-28 sm:w-28"/>
                 <ReactIcon className="w-16 h-16 sm:m-16 m-5 sm:h-28 sm:w-28 text-sky-500"/>    
                 <JsIcon className="w-16 h-16 sm:m-16 m-5 sm:h-28 sm:w-28"/>      
-                <NextIcon className="w-16 h-16 sm:m-16 m-5 sm:h-28 sm:w-28"/>  
+                <NextIcon className="w-60 h-60 sm:m-16 m-5 sm:h-28 sm:w-28"/>  
             </sectiont>
             <h2 className="font-extrabold text-4xl mt-24 dark:text-teal-100 sm:text-5xl lg:text-7xl" id='contacto'>Contacto</h2>
             <section className="flex flex-col mt-10 mb-32 sm:mt-20">
